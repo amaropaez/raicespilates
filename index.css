@@ -331,3 +331,78 @@ header {
 }
 
 /******** tarjetas clases de pilates extendibles********/
+
+
+
+.container {
+
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* configuracion de las cards */
+.card {
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: #05521c;
+    cursor: pointer;
+    flex: 0.9;
+    margin: 2px;
+    position: relative;
+    transition: flex 0.9s;
+}
+
+
+
+/* La card active crecera 10 veces el tamaño anterior */
+.card.active {
+    flex: 10;
+}
+
+
+.container input {
+    padding: 18px 80px;
+    border: none;
+    font-size: 16px;
+    border-radius: 50px;
+    margin-top: 40px;
+    background: linear-gradient(to right, #fab2b2, #e99bdc);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 1px 1px 30px -12px #ec09c6;
+    transition: all 300ms;
+}
+
+.container  input:hover {
+    box-shadow: 1px 1px 30px -6px #e99bdc;
+}
+
+
+@media screen and (max-width: 720px) {
+
+    .container input {
+        display: block;
+        padding: 18px 80px;
+        border: none;
+        font-size: 16px;
+        border-radius: 50px;
+        margin-top: 40px;
+        background: linear-gradient(to right, #fab2b2, #e99bdc);
+        color: #fff;
+        cursor: pointer;
+        box-shadow: 1px 1px 30px -12px #ec09c6;
+        transition: all 300ms;
+    }
+    
+    .container  input:hover {
+        box-shadow: 1px 1px 30px -6px #e99bdc;
+    }
+
+}
