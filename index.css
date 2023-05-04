@@ -152,6 +152,7 @@ header {
     .container__cover {
         background-position: 50%;
     }
+
 }
 
 
@@ -264,6 +265,8 @@ header {
     .menu #btn_menu:hover {
         background: rgba(255, 255, 255, 0.2);
     }
+
+  
 }
 
 /******** VIDEO PROFESORADO *************/
@@ -280,12 +283,16 @@ header {
     margin: auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+}
+
+.container__video .svg video {
+    width: 500px;
+    justify-content: center;
 }
 
 .container__video .text {
     max-width: 800px;
-    margin: auto;
+    margin: 40px;
 }
 
 .container__video .text h2 {
@@ -295,10 +302,29 @@ header {
 
 .container__video .text p {
     font-size: 18px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
+@media screen and (max-width: 720px) {
+    
+    .video {
+        
+        height: 100%;
+        margin: auto;
+        display: block;
+    }
+    
+    
+.container__video .text h2 {
+    font-size: 36px;
+    font-weight: 600;
+    text-justify: distribute;
+}
 
-.container__video .svg video {
-    width: 500px;
+.container__video .text p {
+    font-size: 18px;
+    margin-top: 40px;
+
+    text-justify: distribute;
+}
 }
