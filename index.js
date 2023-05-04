@@ -16,3 +16,22 @@ function ocultar_menu(){
     nav.style.right = "-250px";
     background_menu.style.display = "none";
 }
+
+
+const cards = document.querySelectorAll('.card'); //seleccionamos todas las clases card
+
+//recorremos todas las card
+cards.forEach( card => {
+  //asignamos un evento click
+  card.addEventListener('click', () => {
+    removeActiveClass(); //removemos la clase anterior para que asi otra card pueda expandirse
+
+    //añadimos la clase active lo que permite expandir a esa card
+    card.classList.add('active');
+  });
+});
+
+//funcion que permite remover la clase active de una card
+function removeActiveClass() {
+  cards.forEach( card => card.classList.remove('active'));
+}

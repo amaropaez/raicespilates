@@ -266,7 +266,7 @@ header {
         background: rgba(255, 255, 255, 0.2);
     }
 
-  
+
 }
 
 /******** VIDEO PROFESORADO *************/
@@ -306,25 +306,28 @@ header {
 }
 
 @media screen and (max-width: 720px) {
-    
+
     .video {
-        
+
         height: 100%;
         margin: auto;
         display: block;
     }
-    
-    
-.container__video .text h2 {
-    font-size: 36px;
-    font-weight: 600;
-    text-justify: distribute;
+
+
+    .container__video .text h2 {
+        font-size: 36px;
+        font-weight: 600;
+        text-justify: distribute;
+    }
+
+    .container__video .text p {
+        font-size: 18px;
+        margin-top: 40px;
+        text-justify: distribute;
+
+    }
+
 }
 
-.container__video .text p {
-    font-size: 18px;
-    margin-top: 40px;
-
-    text-justify: distribute;
-}
-}
+/******** tarjetas clases de pilates extendibles********/
